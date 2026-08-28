@@ -1,0 +1,1107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>For Piku 🕷️❤️</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#090b12;
+    color:white;
+    overflow-x:hidden;
+}
+
+/* WEB BACKGROUND */
+
+.web-bg{
+    position:fixed;
+    inset:0;
+    z-index:-1;
+    opacity:.13;
+    background-image:
+        linear-gradient(45deg,transparent 48%,#fff 49%,#fff 51%,transparent 52%),
+        linear-gradient(-45deg,transparent 48%,#fff 49%,#fff 51%,transparent 52%);
+    background-size:90px 90px;
+}
+
+/* NAV */
+
+nav{
+    position:fixed;
+    top:0;
+    width:100%;
+    z-index:1000;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:16px 8%;
+
+    background:rgba(5,6,10,.82);
+    backdrop-filter:blur(14px);
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+.logo{
+    font-family:'Bangers',cursive;
+    font-size:28px;
+    letter-spacing:2px;
+    color:#e62429;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    font-size:13px;
+}
+
+/* HERO */
+
+.hero{
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    padding:120px 20px 70px;
+
+    position:relative;
+
+    background:
+        radial-gradient(circle at 50% 40%,rgba(230,36,41,.20),transparent 30%),
+        radial-gradient(circle at 20% 80%,rgba(25,75,220,.16),transparent 30%);
+}
+
+.hero-content{
+    max-width:850px;
+}
+
+.spider{
+    font-size:100px;
+
+    animation:
+        swing 3s ease-in-out infinite,
+        glow 2s ease-in-out infinite alternate;
+
+    display:inline-block;
+}
+
+@keyframes swing{
+    0%,100%{
+        transform:rotate(-5deg) translateY(0);
+    }
+
+    50%{
+        transform:rotate(5deg) translateY(-15px);
+    }
+}
+
+@keyframes glow{
+    from{
+        filter:drop-shadow(0 0 5px #e62429);
+    }
+
+    to{
+        filter:drop-shadow(0 0 28px #e62429);
+    }
+}
+
+.small-title{
+    margin-top:25px;
+
+    color:#4d8dff;
+
+    letter-spacing:4px;
+
+    font-size:12px;
+
+    text-transform:uppercase;
+}
+
+.hero h1{
+    font-family:'Bangers',cursive;
+
+    font-size:clamp(65px,11vw,120px);
+
+    letter-spacing:5px;
+
+    color:#e62429;
+
+    text-shadow:
+        5px 5px 0 #174ea6,
+        0 0 25px rgba(230,36,41,.3);
+
+    margin:5px 0;
+}
+
+.hero h2{
+    font-size:24px;
+
+    color:#fff;
+}
+
+.hero p{
+    max-width:650px;
+
+    margin:22px auto;
+
+    color:#bfc4d4;
+
+    line-height:1.8;
+}
+
+.btn{
+    display:inline-block;
+
+    padding:14px 30px;
+
+    border-radius:6px;
+
+    background:#e62429;
+
+    color:white;
+
+    border:none;
+
+    text-decoration:none;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    box-shadow:0 8px 25px rgba(230,36,41,.25);
+
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-4px);
+
+    box-shadow:0 14px 35px rgba(230,36,41,.4);
+}
+
+/* SECTION */
+
+section{
+    padding:100px 8%;
+}
+
+.title{
+    text-align:center;
+
+    font-family:'Bangers',cursive;
+
+    letter-spacing:3px;
+
+    font-size:50px;
+
+    color:#e62429;
+
+    text-shadow:3px 3px 0 #174ea6;
+
+    margin-bottom:15px;
+}
+
+.subtitle{
+    text-align:center;
+
+    max-width:650px;
+
+    margin:0 auto 50px;
+
+    color:#aeb4c5;
+
+    line-height:1.8;
+}
+
+/* POW CARDS */
+
+.cards{
+    max-width:1050px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(auto-fit,minmax(220px,1fr));
+
+    gap:25px;
+}
+
+.card{
+    padding:32px 25px;
+
+    background:
+        linear-gradient(145deg,#121624,#0b0d15);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:14px;
+
+    text-align:center;
+
+    transition:.35s;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.25);
+}
+
+.card:hover{
+    transform:
+        translateY(-10px)
+        rotate(-1deg);
+
+    border-color:#e62429;
+}
+
+.icon{
+    font-size:50px;
+
+    margin-bottom:15px;
+}
+
+.card h3{
+    font-family:'Bangers',cursive;
+
+    font-size:28px;
+
+    letter-spacing:2px;
+
+    color:#4d8dff;
+
+    margin-bottom:8px;
+}
+
+.card p{
+    color:#adb3c3;
+
+    font-size:14px;
+
+    line-height:1.7;
+}
+
+/* LETTER */
+
+.letter-section{
+    background:
+        linear-gradient(
+            180deg,
+            rgba(230,36,41,.06),
+            rgba(23,78,166,.06)
+        );
+}
+
+.letter-box{
+    max-width:780px;
+
+    margin:auto;
+
+    padding:45px;
+
+    background:#10131d;
+
+    border-radius:15px;
+
+    border-left:5px solid #e62429;
+
+    border-right:5px solid #174ea6;
+
+    box-shadow:
+        0 20px 60px rgba(0,0,0,.35);
+
+    line-height:2;
+
+    color:#d7d9e2;
+
+    position:relative;
+}
+
+.letter-box::before{
+    content:"🕷️";
+
+    position:absolute;
+
+    right:25px;
+    top:20px;
+
+    font-size:40px;
+
+    opacity:.4;
+}
+
+.letter-heading{
+    font-family:'Bangers',cursive;
+
+    letter-spacing:2px;
+
+    color:#e62429;
+
+    font-size:32px;
+
+    margin-bottom:25px;
+}
+
+.letter-box strong{
+    color:#ff5960;
+}
+
+/* GIFT */
+
+.gift-section{
+    text-align:center;
+}
+
+.gift{
+    width:190px;
+    height:170px;
+
+    margin:50px auto 25px;
+
+    position:relative;
+
+    cursor:pointer;
+
+    transition:.4s;
+}
+
+.gift:hover{
+    transform:scale(1.08);
+}
+
+.gift-box{
+    position:absolute;
+
+    bottom:0;
+    left:5px;
+
+    width:180px;
+    height:115px;
+
+    background:#e62429;
+
+    border:3px solid #174ea6;
+
+    border-radius:8px;
+}
+
+.gift-box::after{
+    content:"";
+
+    position:absolute;
+
+    left:74px;
+
+    width:28px;
+    height:115px;
+
+    background:#174ea6;
+}
+
+.gift-lid{
+    position:absolute;
+
+    top:25px;
+    left:-5px;
+
+    width:200px;
+    height:42px;
+
+    background:#174ea6;
+
+    border:3px solid #e62429;
+
+    border-radius:8px;
+
+    z-index:3;
+
+    transition:.7s;
+}
+
+.gift.open .gift-lid{
+    transform:
+        translateY(-75px)
+        rotate(-6deg);
+}
+
+/* SURPRISE */
+
+.surprise{
+    display:none;
+
+    max-width:650px;
+
+    margin:45px auto;
+
+    padding:40px 25px;
+
+    background:#10131d;
+
+    border-radius:15px;
+
+    border:1px solid #e62429;
+
+    animation:appear .7s ease;
+}
+
+@keyframes appear{
+    from{
+        opacity:0;
+        transform:scale(.8);
+    }
+
+    to{
+        opacity:1;
+        transform:scale(1);
+    }
+}
+
+.surprise h2{
+    font-family:'Bangers',cursive;
+
+    font-size:45px;
+
+    letter-spacing:3px;
+
+    color:#e62429;
+}
+
+.surprise p{
+    color:#bfc4d4;
+
+    line-height:1.8;
+}
+
+.big-message{
+    color:white !important;
+
+    font-size:20px;
+
+    font-weight:600;
+}
+
+/* FINAL */
+
+.final{
+    display:none;
+
+    min-height:75vh;
+
+    text-align:center;
+
+    justify-content:center;
+    align-items:center;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(230,36,41,.18),
+            transparent 60%
+        );
+}
+
+.final-content{
+    max-width:700px;
+}
+
+.final-spider{
+    font-size:85px;
+
+    animation:pulse 1.5s infinite;
+}
+
+@keyframes pulse{
+    50%{
+        transform:scale(1.15);
+    }
+}
+
+.final h2{
+    font-family:'Bangers',cursive;
+
+    font-size:60px;
+
+    letter-spacing:3px;
+
+    color:#e62429;
+
+    text-shadow:3px 3px 0 #174ea6;
+}
+
+.final p{
+    color:#c5c9d5;
+
+    line-height:1.9;
+}
+
+/* CONFETTI */
+
+.confetti{
+    position:fixed;
+
+    top:-20px;
+
+    z-index:3000;
+
+    pointer-events:none;
+
+    font-size:20px;
+
+    animation:fall 3s linear forwards;
+}
+
+@keyframes fall{
+    to{
+        transform:
+            translateY(110vh)
+            rotate(720deg);
+    }
+}
+
+/* MOBILE */
+
+@media(max-width:650px){
+
+    nav{
+        padding:15px 5%;
+    }
+
+    nav a{
+        display:none;
+    }
+
+    section{
+        padding:75px 5%;
+    }
+
+    .hero h1{
+        font-size:70px;
+    }
+
+    .title{
+        font-size:40px;
+    }
+
+    .letter-box{
+        padding:30px 22px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="web-bg"></div>
+
+
+<!-- NAV -->
+
+<nav>
+
+    <div class="logo">
+        PIKU 🕷️
+    </div>
+
+    <div>
+        <a href="#home">Home</a>
+        <a href="#bond">Mission</a>
+        <a href="#letter">Letter</a>
+        <a href="#gift">Surprise</a>
+    </div>
+
+</nav>
+
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <div class="spider">
+            🕷️
+        </div>
+
+        <div class="small-title">
+            A Special Message For
+        </div>
+
+        <h1>
+            PIKU
+        </h1>
+
+        <h2>
+            My Mastikhor Bahen ❤️
+        </h2>
+
+        <p>
+            Every superhero needs someone
+            who makes life a little more fun.
+            And apparently... mine is you. 😂
+        </p>
+
+        <a href="#bond" class="btn">
+            Enter The Spider-Verse 🕸️
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- BOND -->
+
+<section id="bond">
+
+    <h2 class="title">
+        PIKU'S SUPERPOWERS
+    </h2>
+
+    <p class="subtitle">
+        Some very important scientific observations
+        about my mastikhor bohin. 😂
+    </p>
+
+    <div class="cards">
+
+        <div class="card">
+
+            <div class="icon">
+                😂
+            </div>
+
+            <h3>
+                MASTI
+            </h3>
+
+            <p>
+                Somehow you always manage
+                to make things more fun.
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <div class="icon">
+                😜
+            </div>
+
+            <h3>
+                CHAOS
+            </h3>
+
+            <p>
+                A little bit of chaos,
+                a lot of laughter.
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <div class="icon">
+                🥹
+            </div>
+
+            <h3>
+                SMILE
+            </h3>
+
+            <p>
+                Keep that smile alive.
+                Seriously. Always.
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <div class="icon">
+                🕷️
+            </div>
+
+            <h3>
+                LEGEND
+            </h3>
+
+            <p>
+                Certified mastikhor bohin.
+                No arguments accepted.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- LETTER -->
+
+<section class="letter-section" id="letter">
+
+    <h2 class="title">
+        CLASSIFIED MESSAGE 💌
+    </h2>
+
+    <p class="subtitle">
+        From your friendly neighbourhood Bhai.
+        Read carefully. 😌
+    </p>
+
+    <div class="letter-box">
+
+        <div class="letter-heading">
+            YOOOO PIKU! 🕷️❤️
+        </div>
+
+        YOOOO Piku! 😂
+
+        <br>
+
+        Happy Raksha Bandhan! ❤️
+
+        <br><br>
+
+        Muehehehe… having such a
+        <strong>mastikhor and pyari bahen</strong>
+        like you, what more could I ask for? ☺️
+
+        <br><br>
+
+        Hehehe… bas hamesha khush aur
+        muskurate rehna.
+
+        <br>
+
+        Stress thoda kam lena,
+        aur apna khayal zyada rakhna,
+        okay? ❤️
+
+        <br><br>
+
+        Baaki agar life mein kabhi koi problem aaye,
+        toh shayad main tumhari help kar paun...
+
+        <br><br>
+
+        <strong>
+            So karunga, meri pyari Piku bohin. ❤️
+        </strong>
+
+        <br><br>
+
+        Mueheheheheh! 😂🕷️
+
+        <br><br>
+
+        Stay happy, keep smiling,
+        and don't forget—
+
+        <br>
+
+        <strong>
+            Your Bhai has got your back. 🕸️❤️
+        </strong>
+
+        <br><br>
+
+        — Your Bhai 😎
+
+    </div>
+
+</section>
+
+
+<!-- GIFT -->
+
+<section class="gift-section" id="gift">
+
+    <h2 class="title">
+        ONE LAST MISSION 🎁
+    </h2>
+
+    <p class="subtitle">
+        Piku... you've reached the final level.
+        Open the mystery gift. 👀
+    </p>
+
+
+    <div
+        class="gift"
+        id="gift"
+        onclick="openGift()"
+    >
+
+        <div class="gift-lid"></div>
+
+        <div class="gift-box"></div>
+
+    </div>
+
+
+    <button
+        class="btn"
+        onclick="openGift()"
+    >
+        OPEN THE GIFT 🕷️
+    </button>
+
+
+    <div
+        class="surprise"
+        id="surprise"
+    >
+
+        <h2>
+            MISSION COMPLETE! 💥
+        </h2>
+
+        <p>
+            YOOOO Piku! You actually opened it! 😂
+        </p>
+
+        <br>
+
+        <p class="big-message">
+            Your official Raksha Bandhan reward:
+            unlimited masti + one annoying Bhai. 😌❤️
+        </p>
+
+        <br>
+
+        <p>
+            And yes...
+
+            <br><br>
+
+            Chocolate pending. 🍫
+
+        </p>
+
+        <br>
+
+        <button
+            class="btn"
+            onclick="showFinal()"
+        >
+            FINAL MESSAGE 🕸️
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- FINAL -->
+
+<section
+    class="final"
+    id="final"
+>
+
+    <div class="final-content">
+
+        <div class="final-spider">
+            🕷️
+        </div>
+
+        <h2>
+            HAPPY RAKSHA BANDHAN,
+            PIKU! ❤️
+        </h2>
+
+        <p>
+
+            Keep smiling.
+
+            <br>
+
+            Stay happy.
+
+            <br>
+
+            Take care of yourself.
+
+            <br><br>
+
+            And remember...
+
+            <br><br>
+
+            <strong>
+                No matter what happens,
+                your Bhai is always on your side. ❤️
+            </strong>
+
+            <br><br>
+
+            Mueheheheheh! 😂🕷️
+
+        </p>
+
+        <br>
+
+        <div style="font-size:30px;">
+            🕷️ 🕸️ ❤️ 🕸️ 🕷️
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer style="
+    text-align:center;
+    padding:45px 20px;
+    background:#05060a;
+    color:#aaa;
+    line-height:1.8;
+">
+
+    Made specially for
+
+    <span style="color:#e62429;">
+        Piku ❤️
+    </span>
+
+    <br>
+
+    Happy Raksha Bandhan 🕷️
+
+    <br><br>
+
+    <small>
+        From your annoying Bhai 😂
+    </small>
+
+</footer>
+
+
+<script>
+
+/* GIFT */
+
+function openGift(){
+
+    const gift =
+        document.getElementById("gift");
+
+    const surprise =
+        document.getElementById("surprise");
+
+    gift.classList.add("open");
+
+    surprise.style.display="block";
+
+    confetti();
+
+    setTimeout(function(){
+
+        surprise.scrollIntoView({
+            behavior:"smooth",
+            block:"center"
+        });
+
+    },500);
+
+}
+
+
+/* FINAL */
+
+function showFinal(){
+
+    const final =
+        document.getElementById("final");
+
+    final.style.display="flex";
+
+    confetti();
+
+    setTimeout(function(){
+
+        final.scrollIntoView({
+            behavior:"smooth",
+            block:"center"
+        });
+
+    },300);
+
+}
+
+
+/* CONFETTI */
+
+function confetti(){
+
+    const items=[
+        "🕷️",
+        "🕸️",
+        "❤️",
+        "💙",
+        "✨",
+        "🎉"
+    ];
+
+    for(let i=0;i<70;i++){
+
+        const item =
+            document.createElement("div");
+
+        item.className="confetti";
+
+        item.innerHTML =
+            items[
+                Math.floor(
+                    Math.random()*items.length
+                )
+            ];
+
+        item.style.left =
+            Math.random()*100+"vw";
+
+        item.style.animationDuration =
+            (2+Math.random()*2)+"s";
+
+        item.style.animationDelay =
+            Math.random()+ "s";
+
+        document.body.appendChild(item);
+
+        setTimeout(function(){
+            item.remove();
+        },4500);
+
+    }
+
+}
+
+</script>
+
+</body>
+</html>
